@@ -1,6 +1,5 @@
 import React from 'react'
-import Navigationbar from '../navigation/navigationbar'
-import Hola from '../navigation/Hola'
+import Navigationbar from '../navigation/Navigationbar'
 function Header() {
   return (
     <div>
