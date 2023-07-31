@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/auth/Login";
 import Header from "./components/layout/Header";
-import Register from "./components/auth/Register/Register";
+import Register from "./components/auth/register/Register";
 import CompanyRegistration from "./components/auth/register/CompanyRegistration";
 import CandidateRegistration from "./components/auth/register/CandidateRegistration";
 import ProfilePageCandidate from "./pages/candidate/CandidateProfilePage";
