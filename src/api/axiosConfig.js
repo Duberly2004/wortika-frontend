@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const newInstance = axios.create({
-    baseURL: "http://localhost:4000/api",
+    baseURL: "https://wortika-backend.onrender.com/api",
     withCredentials: true
 })
 
