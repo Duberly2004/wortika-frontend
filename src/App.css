@@ -1,0 +1,19 @@
+#root {
+    --color-primary:#339698;
+    --color-primary-hover:#427c7e;
+    --color-text:#4c5661;
+}
+
+.color-primary{
+    color: var(--color-primary);
+}
+.color-primary-hover:hover{
+    color: var(--color-primary-hover);
+}
+.color-text{
+    color: var(--color-text);
+}
+
+.button-primary{
+    background: linear-gradient(to top, #339698, #83C389) !important;
+}

@@ -1,0 +1,41 @@
+.button-primary-color {
+  background: #83c3af !important;
+}
+.PhoneInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PhoneInputCountry {
+  display: flex !important;
+  align-items: center;
+  gap: 5px;
+}
+
+.PhoneInputCountryIcon {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+.PhoneInputCountryIconImg {
+  height: 20px;
+  width: 50px;
+}
+
+.PhoneInputCountrySelect {
+  width: 100px;
+}
+
+.PhoneInputInput {
+  display: none;
+  /* border-bottom: 1px solid #38b2ac;
+  outline: none;
+  padding-bottom: 8px; */
+}
+.form-control {
+  border-bottom: 1px solid #38b2ac;
+  outline: none;
+  padding-bottom: 8px;  
+}
