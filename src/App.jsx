@@ -19,7 +19,7 @@ import {
 import { CompanyProvider } from "./context/profiles/CompanyContext";
 import { CandidateProvider } from "./context/profiles/CandidateContext";
 import Profile from "./routes/Profile";
-import LateralMenu from "./components/navigation/LateralMenu";
+const urlBase= '/wortika-frontend'
 function App() {
   return (
     <AuthProvider>
@@ -28,13 +28,13 @@ function App() {
           <Header />
           <Routes>
             <Route
-              path="/"
+              path={`${urlBase}/`}
               element={
                 <h1 className="text-3xl font-bold color-primary">Home</h1>
               }
             />
             <Route
-              path="/home-company"
+              path={`${urlBase}/home-company`}
               element={
                 <h1 className="text-3xl font-bold color-primary">
                   Soy Empresa
@@ -42,7 +42,7 @@ function App() {
               }
             />
             <Route
-              path="/home-candidate"
+              path={`${urlBase}/home-candidate`}
               element={
                 <h1 className="text-3xl font-bold color-primary">
                   Soy Candidato
@@ -50,34 +50,34 @@ function App() {
               }
             />
             <Route element={<IsLoading />}>
-              <Route path="login" element={<Login />} />
+              <Route path={`${urlBase}/login`} element={<Login />} />
             </Route>
-            <Route path="register/*" element={<Register />}>
+            <Route path={`${urlBase}/register/*`} element={<Register />}>
               <Route path="company" element={<CompanyRegistration />} />
               <Route path="candidate" element={<CandidateRegistration />} />
             </Route>
-            <Route path="confirm-email" element={<ConfirmEmail />} />
+            <Route path={`${urlBase}/confirm-email`} element={<ConfirmEmail />} />
             <Route
-              path="confirmation-successfully"
+              path={`${urlBase}/confirmation-successfully`}
               element={<ConfirmEmailSuccessfully />}
             />
             <Route
-              path="no-accounts-to-verify"
+              path={`${urlBase}/no-accounts-to-verify`}
               element={<NoAccountsToVerify />}
             />
             <Route
-              path="confirmation-expired"
+              path={`${urlBase}/confirmation-expired`}
               element={<NoAccountsToVerify />}
             />
 
             {/* Rutas para usuarios loggeados */}
             <Route element={<ProtectedRoute />}>
               <Route
-                path="profile-candidate"
+                path={`${urlBase}/profile-candidate`}
                 element={<ProfilePageCandidate />}
               />
-              <Route path="profile" element={<Profile />} />
-              <Route path="profile-company" element={<ProfilePageCompany />} />
+              <Route path={`${urlBase}/profile`} element={<Profile />} />
+              <Route path={`${urlBase}/profile-company`} element={<ProfilePageCompany />} />
             </Route>
             <Route path="*" element={<p>Not Fount</p>} />
           </Routes>

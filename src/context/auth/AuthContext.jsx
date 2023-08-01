@@ -15,6 +15,7 @@ export function AuthProvider({ children }) {
       await loginRequest(user);
       const userData = await getUserRequest()
       const res = await verifyTokenRequest();
+      console.log(res)
       if(res.data && userData.data){
         setUserId(res.data)
         setUser(userData.data)
