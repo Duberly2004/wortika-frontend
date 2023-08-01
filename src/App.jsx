@@ -27,13 +27,13 @@ function App() {
           <Header />
           <Routes>
             <Route
-              path="/wortika-frontend"
+              path="/"
               element={
                 <h1 className="text-3xl font-bold color-primary">Home</h1>
               }
             />
             <Route
-              path="/wortika-frontend/home-company"
+              path="/home-company"
               element={
                 <h1 className="text-3xl font-bold color-primary">
                   Soy Empresa
@@ -41,7 +41,7 @@ function App() {
               }
             />
             <Route
-              path="wortika-frontend/home-candidate"
+              path="/home-candidate"
               element={
                 <h1 className="text-3xl font-bold color-primary">
                   Soy Candidato
