@@ -30,8 +30,8 @@ function Login() {
             initialValues={{ email: "", password: "" }}
             onSubmit={async (values, actions) => {
               try {
-                await login(values);
-                navigate("/profile/");
+                // await login(values);
+                navigate("/profile");
               } catch (error) {
                 console.log(error);
               }

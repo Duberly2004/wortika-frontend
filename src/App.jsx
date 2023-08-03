@@ -70,12 +70,12 @@ function App() {
             />
 
             {/* Rutas para usuarios loggeados */}
+            <Route path="profile" element={<Profile />} />
             <Route element={<ProtectedRoute />}>
               <Route
                 path="profile-candidate"
                 element={<ProfilePageCandidate />}
               />
-              <Route path="profile" element={<Profile />} />
               <Route path="profile-company" element={<ProfilePageCompany />} />
             </Route>
             <Route path="*" element={<p>Not Fount</p>} />
